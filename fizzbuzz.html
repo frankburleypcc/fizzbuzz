@@ -9,17 +9,18 @@
 //      if it is a multiple of both then "fizzbuzz"
     
     //variables created to allow changes to the numbers    
-    var first = 3;
-    var second = 5;
+    var firstNum = 15;
+    var secondNum = 3;
+    var thirdNum = 5;
     //for loop increments to 100   
     for (var i = 1; i < 100; i++) {
-        if (i % first == 0) {
-            console.log("fizz");
-        } else if (i % second == 0) {
-            console.log("buzz");
-        } else if (i % first == 0 && i % second == 0){
+        if (i % firstNum === 0) {
             console.log("fizzbuzz");
-        }else
+        } else if (i % secondNum === 0) {
+            console.log("fizz");
+        } else if (i % thirdNum === 0){
+            console.log("buzz");
+        } else
         //the else added here removes the number and replaces it with the string
         console.log(i);
     }
