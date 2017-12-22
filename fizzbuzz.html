@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+    <script>
+//      if it is a multiple of 3 then "fizz"
+//      if it is a multiple of 5 then "buzz"
+//      if it is a multiple of both then "fizzbuzz"
+    
+    //variables created to allow changes to the numbers    
+    var first = 3;
+    var second = 5;
+    //for loop increments to 100   
+    for (var i = 1; i < 100; i++) {
+        if (i % first == 0) {
+            console.log("fizz");
+        } else if (i % second == 0) {
+            console.log("buzz");
+        } else if (i % first == 0 && i % second == 0){
+            console.log("fizzbuzz");
+        }else
+        //the else added here removes the number and replaces it with the string
+        console.log(i);
+    }
+        
+
+    
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
